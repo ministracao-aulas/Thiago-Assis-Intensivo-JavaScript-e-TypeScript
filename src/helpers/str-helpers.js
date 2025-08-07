@@ -21,3 +21,15 @@ export const ifStringOr = (value, alter) => {
 
 export const lowerCase = (str) => ifStringOr(str).toLowerCase();
 export const upperCase = (str) => ifStringOr(str).toUpperCase();
+
+export function capitalize(str) {
+    if (!isString(str)) {
+        return '';
+    }
+
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+export function teste(valor) {
+    return valor;
+}

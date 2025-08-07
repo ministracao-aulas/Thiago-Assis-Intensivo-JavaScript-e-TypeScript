@@ -1,0 +1,36 @@
+{
+    "ECMA Script Module - Function": {
+        "scope": "javascript,typescript",
+        "prefix": [
+            "esmf",
+            "esm:f",
+            "export:function",
+        ],
+        "body": [
+            "export function ${1:functionName}(${2:param}) {",
+            "    return$0;",
+            "}",
+        ],
+        "description": "An ECMA Script Module as function"
+    },
+    "safeLog": {
+        "scope": "javascript,typescript",
+        "prefix": [
+            "safeLog",
+            "log:safeLog",
+        ],
+        "body": [
+            "safeLog($1)",
+        ],
+    },
+    "log": {
+        "scope": "javascript,typescript",
+        "prefix": [
+            "log",
+            "log:log",
+        ],
+        "body": [
+            "log($1)",
+        ],
+    },
+}
