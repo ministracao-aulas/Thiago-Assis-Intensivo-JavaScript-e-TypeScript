@@ -23,7 +23,7 @@ await (async () => {
         let _data = await buscaRegistros(limit, offset);
         registros.push(_data);
         offset = offset + limit;
-		// temMaisRegistro = offset <= total;
+        // temMaisRegistro = offset <= total;
         temMaisRegistro = Array.isArray(_data.data) && _data.data?.length;
     } while(temMaisRegistro)
 })()
